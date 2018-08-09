@@ -1,0 +1,168 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<html lang="ko">
+<head>
+<title>박가네 - 찾아라! 대전의 맛좋은 녀석들</title>
+<script type="text/javascript"
+	src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=brsKDuhVX7iCQmRBmwof&submodules=geocoder"></script>
+<style type="text/css">
+.subtitle {
+	color: lightgreen;
+}
+
+.sky {
+	color: skyblue;
+}
+
+a:link {
+	color: aliceblue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: aliceblue;
+	text-decoration: none;
+}
+
+div.menu {
+			width: 1133px;
+			height: 100px;
+			position: fixed;
+			text-align: center;
+			font-size: 20px;
+			z-index:80;
+			background-color: white;
+			top:0px;
+			left:0px;
+			color: aliceblue;
+            font-size: 3em;
+            font-family: "함초롬돋움";
+        }
+</style>
+<script>
+	function login() {
+		alert("로그인이 필요한 서비스입니다.");
+	}
+</script>
+</head>
+<body>
+	<div class="menu"><table background="./img/goldmenu3.png" width=1133 height=100>
+                <tr align="center">
+                    <td><a href="#intro">소개</a></td>
+                    <td><a href="#menu">메뉴</a></td>
+                    <td><a href="#where">위치</a></td>
+                    <td><a href="#review">리뷰</a></td>
+                </tr>
+            </table></div>
+	<div>
+		<br><br><table align="center">
+			<tr>
+				<td><img src="./img/박가네_외관.png"><br></td>
+			</tr>
+			<tr>
+				<td id="intro" align="center">박가네 외관<td>
+			</tr>
+		</table>
+		<br><br><br>
+		<br> <font class="subtitle">■ 업소 간략소개</font><br> 정성과 정갈한 음식,
+		그리고 편안한 분위기가 공존하는,<br><as id="menu"></as> 언제 가든 맛의 변함이 없는, 양의 모자람도 없는,<br> 한 끼의
+		행복과 한 잔의 기쁨을 선사하는,<br> 그것이 이 곳, 박가네의 모토입니다.<br> 왠지 소개가
+		짧아보인다구요. 당연하죠! 나머지 얘기는 밑에서 음식 소개할 때 다 할껀데.<br>
+		<br>
+		<table align="center">
+			<tr>
+				<td align="center"><font class="subtitle">■ 메뉴판 공간</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="./img/박가네_메뉴.png"><br>
+					2018년 1월 1일부로 소주가 <font color="red"> 4천원으로 인상</font>되었습니다. 흐규흐규
+					ㅠ_ㅠ;<br>
+				<br></td>
+			</tr>
+			<tr>
+				<td align="center"><font class="subtitle">■ 메뉴 사진 및 소개</font></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="./img/박가네_장갑.png"><br>
+					박가네에서 음식을 주문하시면, 이렇게 갑자기 왠 노가다 목장갑(?)을 드랍(?)해 주신답니다.<br>1차로 이
+					목장갑을 착용히고, 그 위에 2차로 위생장갑까지 착용해 주셔야 먹을 준비 끗!<br>
+				<br></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="./img/박가네_양푼이.png"><br>
+					쨔잔!! 박가네 대표메뉴 중 하나인 매운 양푼이 갈비찜이랍니다~♡ <br>비쥬얼이 장난아니네요.. 보기만 해도
+					침넘어간다능(꿀꺽..) <br>참고로 갈비찜은 매운 맛을 3단계로 골라서 먹을 수 있습니다. <br>플러스
+					알파로 매운 맛에 약하신 분을 위해 쿨피스는 뽀너스! ^.3~ <br>
+				<br></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="./img/박가네_고기.png"><br>
+					그리고 대망의 본메뉴, 석쇠구이 등갈비 등판!!!(두둥~)<br> 박가네의 등갈비는 일명
+					"도끼갈비(;;;)"라는 애칭을 가지고 있는데요, <br>직접 실물을 보니 왜 그런 별명이 붙었는지 알 것도
+					같네요. ㅎㅎ <br>
+				<br></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="./img/박가네_와인.png"><br>
+					고기를 굽는 종업원분들을 잘 보시면 손에 이런 병을 하나씩 들고 다니실 거에요. <br>처음에 필자는 그냥 맛을
+					돋워 주는 소스겠거니 정도로 생각하고 그냥 넘겼었는데..<br>나중에 필자의 지인이 살짝 여쭤보니, 저 병 안
+					액체의 정체는 무려 <font color="purple"><b>와인</b></font> 이라고 합니다!!(두둥~!!!)<br>과감하게
+					와인으로 맛을 돋울 생각을 하시다니.. 사스가 박가네~ <br>
+				<br></td>
+			</tr>
+			<tr>
+				<td align="center"><img src="./img/박가네_소스.png"><br>
+					마지막으로 박가네 하면 또 빼놓을 수 없는 이것! 바로 특제 마늘소스 되시겠습니다 ㅇㅁㅇ/<as id="where"></as><br>이 집의 고기는
+					그냥 먹어도 맛있지만, 저 마늘소스를 푹~ 찍어드시면 또 다른 맛이 펼쳐진다고 해요. :)<br> 필자도 나중에
+					한 번 도전해봐야겠어요.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br> <font class="subtitle">■ 주소<br></font> 도로명: 대전 동구 동대전로
+		287<br> 지번: 가양동 419-3<br>
+		<br> <font class="subtitle">■ 지도 <br></font> <br>
+		<div id="map1"
+			style="width: 300px; height: 300px; margin-left: 10px; margin-right: 10px"></div>
+		<script>
+			var mapOptions1 = {
+				center : new naver.maps.LatLng(36.345177, 127.444630),
+				zoom : 11
+			};
+
+			var map1 = new naver.maps.Map('map1', mapOptions1);
+			var marker1 = new naver.maps.Marker({
+				position : new naver.maps.LatLng(36.345177, 127.444630),
+				map : map1
+			});
+		</script>
+		<!--  <br><br>
+      주요 랜드마크에서 출발할 때의 거리.시간.요금 등
+      <br>가까운 버스정류장
+      (전부 가급적 최단거리 기준으로 계산할 것) -->
+		<br>
+		<br> 주차장 있음 <br>
+		<br> <font class="subtitle">■ 영업시간<br></font> <br>평일
+		17:00 - 23:30 , 매주 일요일 휴무<br>
+		<br> <font class="subtitle">■ 전화번호<br>
+		</font>042-621-6219<br>
+		<br> ※기타 편의사항: 포장가능, 단체석 완비<br>
+		<br> <font class="subtitle" id="review">■ 리뷰 한마디 </font><br> <input
+			type="text" size="100px"> <select>
+			<option>별점매기기</option>
+			<option>★</option>
+			<option>★☆</option>
+			<option>★★</option>
+			<option>★★☆</option>
+			<option>★★★</option>
+			<option>★★★☆</option>
+			<option>★★★★</option>
+			<option>★★★★☆</option>
+			<option>★★★★★</option>
+		</select> <input type="button" value="등록" onclick="login()">
+	</div>
+</body>
+</html>

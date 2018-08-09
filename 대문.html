@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html> <!--로그인 아이디비번찾기 회원가입 임의로 크기 위치설정한거니까 조정하기 !-->
+<head>
+<meta charset="UTF-8">
+<title>찾아라! 대전의 맛좋은 녀석들</title>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<style>
+a:link{
+			color:black;
+			text-decoration: none;
+}
+a:visited{
+			color:black;
+}
+img.one{
+   border:3px solid blue;
+   top:300px; left:100px;
+   width: 300px;
+   height: 300px;
+   border-radius:150px;
+   text-align:center;
+   line-height:300px;
+   position:absolute;
+   z-index:2;
+}
+img.two{
+   border:3px solid black;
+   top:300px; left:480px;
+   width: 300px;
+   height: 300px;
+   border-radius:150px;
+   text-align:center;
+   line-height:300px;
+   position:absolute;
+   z-index:2;
+}
+img.three{
+   border:3px solid red;
+   top:300px; left:860px;
+   width: 300px;
+   height: 300px;
+   border-radius:150px;
+   text-align:center;
+   line-height:300px;
+   position:absolute;
+   z-index:2;
+}
+img.four{
+   border:3px solid yellow;
+   top:600px; left:300px;
+   width: 300px;
+   height: 300px;
+   border-radius:150px;
+   text-align:center;
+   line-height:300px;
+   position:absolute;
+   z-index:2;
+}
+img.five{
+	border:3px solid green;
+	top:600px; left:680px;
+	width: 300px;
+	height: 300px;
+	border-radius:150px;
+	text-align:center;
+	line-height:300px;
+	position:absolute;
+	z-index:2;
+}
+img.login{
+    height:24px;
+    width:100px;
+    top:55px;left:840px;
+    position:absolute;
+ }
+img.idpsw{
+    height:24px;
+    width:100px;
+    top:55px;left:1100px;
+    position:absolute;
+ }
+img.join{
+    height:24px;
+    width:100px;
+    top:55px;left:970px;
+    position:absolute;
+ }
+img.title{
+    height:100px;
+    width:1210px;
+    top:100px; left:50px;
+    position:absolute;
+    border:1px solid white;
+    border-radius:30px;
+ }
+div.text1{
+ 	top:435px; left:205px;
+ 	position:absolute;
+ 	z-index:1;
+ 	font-size:30px;
+ 	font-weight:bold;
+}
+div.text2{
+ 	top:435px; left:585px;
+ 	position:absolute;
+ 	z-index:1;
+ 	font-size:30px;
+ 	font-weight:bold;
+}
+div.text3{
+ 	top:435px; left:897px;
+ 	position:absolute;
+ 	z-index:1;
+ 	font-size:30px;
+ 	font-weight:bold;
+}
+div.text4{
+ 	top:735px; left:375px;
+ 	position:absolute;
+ 	z-index:1;
+ 	font-size:30px;
+ 	font-weight:bold;
+}
+div.text5{
+ 	top:735px; left:785px;
+ 	position:absolute;
+ 	z-index:1;
+ 	font-size:30px;
+ 	font-weight:bold;
+}
+</style>
+<script>
+function windowOpen1(){
+	fol1=window.open("회원가입.html","new","width=520, height=350, scrollbars=yes"); 
+}
+ function windowOpen2(){
+	fol1=window.open("id찾기.html","new","width=520, height=600, scrollbars=yes"); 
+}
+ function windowOpen3(){
+	fol1=window.open("로그인.html","new","width=300, height=190, scrollbars=yes"); 
+}
+ $(document).ready(function(){
+		$("img.one").mouseenter(function(){
+			$(this).fadeTo("fast",0.3);
+		});
+		$("img.one").mouseleave(function(){
+			$(this).fadeTo("fast",1.0);
+		});
+		$("img.two").mouseenter(function(){
+			$(this).fadeTo("fast",0.3);
+		});
+		$("img.two").mouseleave(function(){
+			$(this).fadeTo("fast",1.0);
+		});
+		$("img.three").mouseenter(function(){
+			$(this).fadeTo("fast",0.3);
+		});
+		$("img.three").mouseleave(function(){
+			$(this).fadeTo("fast",1.0);
+		});
+		$("img.four").mouseenter(function(){
+			$(this).fadeTo("fast",0.3);
+		});
+		$("img.four").mouseleave(function(){
+			$(this).fadeTo("fast",1.0);
+		});
+		$("img.five").mouseenter(function(){
+			$(this).fadeTo("fast",0.3);
+		});
+		$("img.five").mouseleave(function(){
+			$(this).fadeTo("fast",1.0);
+		});
+ });
+</script>
+</head>
+<body>
+<img class="title" src="./img/대문제목.png">
+<img class="login" src="./img/로그인.png" onclick="windowOpen3()" style="cursor:pointer">
+<img class="idpsw" src="./img/idpw찾기.png" onclick="windowOpen2()" style="cursor:pointer">
+<img class="join" src="./img/회원가입.png" onclick="windowOpen1()" style="cursor:pointer">
+<a href="박가네틀.html">
+	<div class="img">
+		<img class="one" src="./img/박가네_외관.png">
+			<div class="text1">박가네</div>
+	</div>
+</a>
+<a href="태화장틀.html">
+	<div class="img">
+		<img class="two" src="./img/태화장_외관.png">
+			<div class="text2">태화장</div>
+	</div>
+</a>
+<a href="여자만틀.html">
+	<div class="img">
+		<img class="three" src="./img/여자만_외관.png">
+			<div class="text3">여자만 장어구이</div>
+	</div>
+</a>
+<a href="신도틀.html">
+	<div class="img">
+		<img class="four" src="./img/신도_외관.png">
+			<div class="text4">신도칼국수</div>
+	</div>
+</a>
+<a href="성심당틀.html">
+	<div class="img">
+		<img class="five" src="./img/성심당_외관.png">
+			<div class="text5">성심당</div>
+	</div>
+</a>
+
+
+</body>
+</html>

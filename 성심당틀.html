@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>맛집 소개</title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+     function windowOpen1(){
+		fol1=window.open("회원가입.html","new","width=520, height=350, scrollbars=yes"); 
+    }
+     function windowOpen2(){
+    	fol1=window.open("id찾기.html","new","width=520, height=600, scrollbars=yes"); 
+    }
+     function login(){
+         alert("로그인이 필요한 서비스입니다.");
+       }
+   </script>
+	<style>
+		a:link{
+			color:black;
+			text-decoration: none;
+		}
+		a:visited{
+			color:black;
+		}
+		div.title {
+			text-align: center;
+			height: 100px;
+			width: 1350px;
+			z-index:100;
+		}
+
+		div.menu {
+			background-color: #FEE370;
+			width: 200px;
+			height: 800px;
+			float: left;
+		}
+
+		div.contents {
+			width: 1150px;
+			height: 800px;
+			float: left;
+		}
+		img.small1 {
+			width: 100px;
+			height: 24px;
+			position:absolute;
+			top:21px;left:1150px;
+			z-index:10;
+		}
+		img.small2 {
+			width: 100px;
+			height: 24px;
+			position:absolute;
+			top:55px;left:1150px;
+			z-index:10;
+		}
+		img.logo{
+			width:180px;
+			height:40px;
+			position:absolute;
+			top:30px;
+			left:10px;
+		}
+		div.title1{
+			width:200px;
+			height:100px;
+			position:absolute;
+			top:0px;
+			left:0px;
+			background-color: #FEE370;
+		}
+		img.title2{
+			width:1150px;
+			height:100px;
+			position:absolute;
+			top:0px;
+			left:200px;
+			z-index:1;
+		}
+		
+	</style>
+</head>
+<body style="margin: 0px; overflow: hidden">
+	<div style="width: 9999%;">
+		<div class="title">"모두에게 좋은 일을 하는", 대전 향토기업의 자존심<br/>성심당<br/>1588-8069(은행동 본점) / 042-220-4138(대전역점) / 042-220-4136(롯데점)</div>
+		<img class="small1" src="./img/예약하기.png" onclick="login()" style="cursor:pointer">
+		<img class="small2" src="./img/즐겨찾기.png" onclick="login()" style="cursor:pointer">
+		<div class="title1"></div>
+		<img class="title2" src="./img/성심당_타이틀.png">
+		<a href="대문.html"><img class="logo" src="./img/로고.png"></a>
+		<div class="menu">
+			<div>
+				<div style="float: left; margin-left: 5px;">
+					<form action="login.jsp" method="post">
+						<br/><input type="text" name="id" size="15px" placeholder="아이디">
+						<br/><input type="password" name="psw" size="15px" placeholder="비밀번호">
+					</form>
+				</div>
+						<div><input type="image" src="./img/로그인3.PNG" style="width: 40px; height: 42px; float: left; margin-top: 23px;"></div>
+			</div>
+				<div style="float: left"><label><input type="checkbox" name="저장">아이디저장</label>
+					<br/>&nbsp;&nbsp; <asd class="button2" onclick="windowOpen2()" style="cursor:pointer">id/pw찾기</asd> &nbsp;
+									<asd class="button1" onclick="windowOpen1()" style="cursor:pointer">회원가입</asd>
+</div>
+			<br/><br/><br/><br/><br/>
+			<a href="박가네틀.html"><img src='./img/박가네.png' style="margin-top: 20px"></a><br/><br/>
+			<a href="태화장틀.html"><img src='./img/태화장.png' style="margin-top: 0px"></a><br/><br/>
+			<a href="여자만틀.html"><img src='./img/여자만장어구이.png' style="margin-top:0px"></a><br/><br/>
+			<a href="신도틀.html"><img src='./img/신도칼국수.png' style="margin-top: 0px"></a><br/><br/>
+			<a href="성심당틀.html"><img src='./img/성심당.png' style="margin-top: 0px"></a>
+		</div>
+		<div class="contents"><iframe src="성심당내용.html" name="bak" frameborder="1px" width="100%" height="100%" /></div>
+	</div>
+</body>
+</html>

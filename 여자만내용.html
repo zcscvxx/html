@@ -1,0 +1,154 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<html lang="ko">
+<head>
+<title>여자만장어구이 - 찾아라! 대전의 맛좋은 녀석들</title>
+<script type="text/javascript"
+	src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=brsKDuhVX7iCQmRBmwof&submodules=geocoder"></script>
+<style type="text/css">
+.subtitle {
+	color: lightgreen;
+}
+
+.sky {
+	color: skyblue;
+}
+
+a:link {
+	color: aliceblue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: aliceblue;
+	text-decoration: none;
+}
+
+div.menu {
+			width: 1133px;
+			height: 100px;
+			position: fixed;
+			text-align: center;
+			font-size: 20px;
+			z-index:80;
+			background-color: white;
+			top:0px;
+			left:0px;
+			color: aliceblue;
+            font-size: 3em;
+            font-family: "함초롬돋움";
+        }
+</style>
+<script>
+	function login() {
+		alert("로그인이 필요한 서비스입니다.");
+	}
+</script>
+</head>
+<body>
+	<div class="menu"><table background="./img/goldmenu3.png" width=1133 height=100>
+                <tr align="center">
+                    <td><a href="#intro">소개</a></td>
+                    <td><a href="#menu">메뉴</a></td>
+                    <td><a href="#where">위치</a></td>
+                    <td><a href="#review">리뷰</a></td>
+                </tr>
+            </table></div>
+	<div>
+		<div><br><br><br><br>
+			<table align="center">
+				<tr>
+					<td><img src="./img/여자만_외관.png"></td>
+				</tr>
+				<tr>
+					<td id="intro" align="center">여자만 장어구이 외관<td>
+				</tr>
+			</table>
+			<br><br><br>
+			<br> <font class="subtitle">■ 업소 간략소개</font><br> 대전 만년동에
+			위치한 민물장어 전문점으로, 전라도에서 직접 공수한 100% 국내산 장어만 사용한답니다.<as id="menu"></as><br> 이 곳의 구이양념은
+			고추장, 간장, 소금 3종류가 인기가 많으며 그 외에도 다양한 장어구이 메뉴가 준비되어 있답니다☆<br> 참고로
+			"여자만"은 여수에 있는 만의 이름으로, 절대 여성분만 오라는 게 아니랍니다.. ^^;<br> 이름의 뜻은 "그대와
+			내가 함께하는 보금자리" 라고 합니다. 예쁘죠. <br>
+			<br><br>
+			<table align="center">
+				<tr>
+					<td align="center" colspan=2><font class="subtitle">■
+							메뉴판</font></td>
+				</tr>
+				<tr>
+					<td align="center"><img src="./img/여자만_메뉴1.png"
+						width="60%"></td>
+					<td align="center"><img src="./img/여자만_메뉴2.png"
+						width="60%"></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<table align="center">
+				<tr>
+					<td align="center"><font class="subtitle">■ 메뉴 사진 및 소개</font><br>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="./img/여자만_장어1.png"><br>
+						네 그렇습니다. 장어입니다. 여기서 뭔 말이 더 필요하겠습니까.<br> 옛날에 필자가 어렸을 때는 여기에
+						부모님이랑 함께 와서 자주 먹곤 했었는데.. <br>문득 그 맛이 그리워지네요. 조만간 먹으러 갈 까봐요.
+						:) <br>(는 사실 이 소개글 쓰는 지금도 저 사진 보고 위꼴한 건 안비밀.. ㅠㅠ;) <br>
+					<br></td>
+				</tr>
+				<tr>
+					<td align="center"><img src="./img/여자만_상차림.png"><br>
+						흔한_여자만의_점심특선.jpg <br> #저상차림실화냐 #19000원실화냐 #횟집코스프레<br>
+					<br></td>
+				</tr>
+				<tr>
+					<td align="center"><img src="./img/여자만_장어2.png"><br>
+						<as id="where"></as>위의 점심특선 메뉴 때 제공되는 장어에요!<br> 조금(실은 아주 많이) 부족한 감이 있지만... 뭐 어때요
+						그딴거 없고 스키다시 짱짱맨</td>
+				</tr>
+			</table>
+			<br><br>
+			<br> <font class="subtitle">■ 주소<br></font> 도로명: 대전 서구
+			만년로68번길 38<br> 지번: 만년동 367<br>
+			<br> <font class="subtitle">■ 지도 <br></font> <br>
+			<div id="map1"
+				style="width: 300px; height: 300px; margin-left: 10px; margin-right: 10px"></div>
+			<script>
+				var mapOptions1 = {
+					center : new naver.maps.LatLng(36.365356, 127.380597),
+					zoom : 11
+				};
+
+				var map1 = new naver.maps.Map('map1', mapOptions1);
+				var marker1 = new naver.maps.Marker({
+					position : new naver.maps.LatLng(36.365356, 127.380597),
+					map : map1
+				});
+			</script>
+			<br>
+			<br> 주차장 있음 <br>
+			<br> <font class="subtitle">■ 영업시간<br></font> <br>매일
+			10:00 - 22:00 , 명절 휴무<br>
+			<br> <font class="subtitle">■ 전화번호<br>
+			</font>042-486-2486<br>
+			<br> ※단체석 완비<br>
+			<br> <font class="subtitle" id="review">■ 리뷰 한마디 </font><br> <input
+				type="text" size="100px"> <select>
+				<option>별점매기기</option>
+				<option>★</option>
+				<option>★☆</option>
+				<option>★★</option>
+				<option>★★☆</option>
+				<option>★★★</option>
+				<option>★★★☆</option>
+				<option>★★★★</option>
+				<option>★★★★☆</option>
+				<option>★★★★★</option>
+			</select> <input type="button" value="등록" onclick="login()">
+		</div>
+</body>
+</html>
